@@ -2,16 +2,11 @@ package com.xtons.samples.iText7;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.util.Arrays;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import com.itextpdf.kernel.geom.PageSize;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
-import com.itextpdf.layout.element.AreaBreak;
 import com.xtons.samples.iText7.demo.Demo;
 
 /**
@@ -23,7 +18,7 @@ public class App
     public static void main( String[] args )
     {
     	final String cases[] = {
-    		"Simple", "Landscape", "Font", "Scale"	
+    		"Simple", "Landscape", "Font", "Matrix", "Crop"
     	};
     	File dest = new File("./demo.pdf");
 		try ( PdfDocument pdfDoc = new PdfDocument(new PdfWriter(dest));

@@ -1,7 +1,5 @@
 package com.xtons.samples.iText7.demo;
 
-import java.awt.geom.AffineTransform;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.net.MalformedURLException;
 import java.util.logging.Level;
@@ -9,20 +7,16 @@ import java.util.logging.Logger;
 
 import com.itextpdf.io.image.ImageData;
 import com.itextpdf.io.image.ImageDataFactory;
-import com.itextpdf.kernel.geom.Matrix;
 import com.itextpdf.kernel.geom.PageSize;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfPage;
-import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.kernel.pdf.canvas.PdfCanvas;
 import com.itextpdf.layout.Document;
 import com.itextpdf.layout.element.AreaBreak;
 import com.itextpdf.layout.element.Image;
-import com.itextpdf.layout.element.Paragraph;
 import com.xtons.samples.iText7.MatrixUtil;
 
-public class DemoScale implements Demo {
-	public static final String DEST = "./target/Scale.pdf";
+public class DemoMatrix implements Demo {
 	public static final String IMAGE = "./resources/sample.jpg";
 
 	@Override
